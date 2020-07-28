@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="containerhome">
+    <p>Hello {{username}}.</p>
+    <a href="{% url 'logout' %}">
+        <p>Click here to logout.</p>
+    </a>
+</div>
+{% endblock %}

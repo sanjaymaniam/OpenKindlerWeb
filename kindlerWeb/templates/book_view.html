@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{%block content %}
+<div class="bookpageimage">
+    <a href="/shelf/{{book.id}}"><img src="{{book.imageURL}}" style="height: 190px; box-shadow: 3px 4px 5px #ccc;
+    -moz-box-shadow: 3px 4px 5px #ccc;
+    -webkit-box-shadow: 3px 4px 5px #ccc;
+    -khtml-box-shadow: 3px 4px 5px #ccc;" class="bookpageimage" class="hvr-grow-rotate"></a>
+</div>
+<div class="booktitlecontainer">
+    <div class="booktitle">
+        <p>{{book.title}}</p>
+        <p style="font-size: 20px;">{{book.author}}</p>
+    </div>
+</div>
+
+{% if book %}
+<ul style="list-style: none;">
+    <div class="textcard">
+        {% for clipping in clippings %}
+        <li>
+            <div class="textcardtext">
+
+            {% if clipping.starred %}            
+                <mark>{{clipping.message}}</mark>
+            {% else %}
+                {{clipping.message}}
+            {% endif %}
+                {% if user.is_authenticated %}
+                <form action="{% url 'shelf:clipping_manager' clipping.book.id clipping.id %}" method="POST" id="bookpageform">
+                    {% csrf_token %}
+                    <button type="submit" class="btn" name="edit-button" value="edit"><i class="fa fa-edit"></i> </button>
+                    <button type="submit" class="btn" name="star-button" value="star"><i class="fa fa-star"></i> </button>
+                    <button type="submit" class="btn" name="delete-button" value="delete"><i class="fa fa-trash"></i> </button>
+                </form>
+                {% endif %}
+            </div>
+        </li>
+        {% endfor %}
+    </div>
+</ul>
+{% else %}
+<p>This is not a valid book page.</p>
+{% endif %}
+</div>
+{% endblock %}

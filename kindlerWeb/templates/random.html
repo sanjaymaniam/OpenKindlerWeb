@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{%block content %}
+
+{% if random_clippings_list %}
+
+<ul style="list-style: none;">
+    <div class="textcard">
+
+        {% for clipping in random_clippings_list %}
+        <li>
+            <div class="textcardtext">
+
+                <p style="text-align: left"><u><a href="{% url 'shelf:book_view' clipping.book.id%}">
+                    {{clipping.book.author}}, {{clipping.book.title}}:
+                </a></u></p>
+
+            {% if clipping.starred %}            
+                <mark>{{clipping.message}}</mark>
+            {% else %}
+                {{clipping.message}}
+            {% endif %}
+                {% if user.is_authenticated %}
+                <form action="{% url 'shelf:clipping_manager' clipping.book.id clipping.id %}" method="POST" id="bookpageform">
+                    {% csrf_token %}
+                    <button type="submit" class="btn" name="edit-button" value="edit"><i class="fa fa-edit"></i> </button>
+                    <button type="submit" class="btn" name="star-button" value="star"><i class="fa fa-star"></i> </button>
+                    <button type="submit" class="btn" name="delete-button" value="delete"><i class="fa fa-trash"></i> </button>
+                </form>
+                {% endif %}
+            </div>
+        </li>
+        {% endfor %}
+    </div>
+</ul>
+
+{% else %}
+<p style="text-align: center;">You haven't added any books yet!</p>
+{% endif %}
+<!-- <div class="center">
+    <div class="sub-main">
+        <a href=""><button class="button-three"><i class="fa fa-random"></i> Shuffle! </button></button></a>
+    </div>
+</div> -->
+{% endblock %}

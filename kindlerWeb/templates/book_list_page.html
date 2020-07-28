@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{%block content %}
+
+{% if book_list %}
+
+<div class="grid-container">
+    {% for book in book_list %}
+    <div class="grid-item">
+
+        <a href="/shelf/{{book.id}}"><img src="{{book.imageURL}}" style="height: 220px;" class="hvr-grow-rotate">
+            <div class="shelftext">{{book.title}}</div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+{% else %}
+<p style="text-align: center">You haven't added any books yet!</p>
+{% endif %}
+{% endblock %}

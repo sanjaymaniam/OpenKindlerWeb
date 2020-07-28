@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{%block content %}
+{% if url == 'file not selected' %}
+<p style="text-align: center">Whoops, looks like you haven't selected your file.</p>
+{% endif %}
+
+{% if user.is_authenticated %}
+    <form method="post" enctype="multipart/form-data" id="uploadform">
+        {% csrf_token %}
+        <input type="file" name="document">
+        <p>Click here to import highlights from My Clippings.txt</p>
+        <button type="submit">Upload file</button>
+    </form>
+{% else %}
+    <p>You can't access this page. Are you logged in?</p>
+{% endif %}
+
+{% endblock %}

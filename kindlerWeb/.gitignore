@@ -1,0 +1,7 @@
+# ignore virtualenv files
+bin/
+lib/
+include/
+share/
+kindlerWeb/kindlerWeb/media
+kindlerWeb/shelf/migrations/__pycache__/

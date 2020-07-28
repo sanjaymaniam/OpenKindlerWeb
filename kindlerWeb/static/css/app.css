@@ -1,0 +1,640 @@
+body {
+    /* background-color: whitesmoke; */
+    color: rgb(0, 0, 0);
+    /* background-color: rgb(150, 78, 218); For browsers that do not support gradients */
+    /* background-image: linear-gradient(rgb(69, 27, 95), rgb(89, 165, 201)); Standard syntax (must be last) */
+    background-color: whitesmoke;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-repeat:no-repeat;
+    background-size: cover;
+  }
+ 
+ /* .title
+ {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	text-align: center;
+  padding-top: 55px;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  align-content: center;
+ }  */
+
+ .container
+ {
+   width: 800px;
+   position: relative;
+   top: -5px;
+   right: 5px;
+ }
+
+  .title a
+ {
+  font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-weight: 500;
+	font-size: 32px;
+	text-align: center;
+  padding-top: 55px;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+ } 
+ a:link {
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+ #navbarSupportedContent {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-size: 1=8px;
+  position: relative;
+  top: -18px;
+  left: 0px;
+}
+
+/* .containerupload
+{
+  background-color: aqua;
+  width: 100%;
+  height: 100%;
+}
+
+.uploadcontainer
+{
+width: 600px;
+height: 60px;
+margin: 0 auto;
+justify-content: center;
+background-color: rgb(43, 18, 65);
+padding-left: 84px;
+padding-right: 84px;
+padding-top: 15px;
+border-radius: 8px;
+
+} */
+
+/* .submit
+{
+  background-color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 10px;
+}
+
+input, select, textarea {
+  background-color: #bde9ba;
+  } */
+  
+ 
+ 
+  #grad1 {
+    height: 2000px;
+    background-color: rgb(150, 78, 218); /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(69, 27, 95), rgb(89, 165, 201)); /* Standard syntax (must be last) */
+  }
+
+  .containerhome
+  {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+  height: 150px;
+  }
+
+  #navbar-nav li.nav-item a
+  {
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+    padding-right: 10px;
+    
+  }
+
+  .navbar-nav
+  {
+    padding-top: 14px;
+    font-size: 17px;
+
+    
+  }
+
+  li.nav-item
+  {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .maintext
+  {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+  }
+
+  .subtext
+  {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    position: relative;
+    top: -4px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  .column img {
+    margin-top: 25px;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+  
+  .container2
+  {
+    margin: 0 auto;
+  width: 90px;
+  height: 100px;
+        
+      
+  }
+  
+  .hvr-grow-rotate {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+    -webkit-transform: scale(1.05) rotate(3deg);
+    transform: scale(1.05) rotate(3deg);
+  }
+
+  #uploadform{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -250px;
+    width: 500px;
+    height: 200px;
+    border: 4px dashed rgb(0, 0, 0);
+  }
+  #uploadform p{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 170px;
+    color: #000000;
+    font-family: Arial;
+  }
+  #uploadform input{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+  }
+  #uploadform button{
+    margin: 0;
+    color: #fff;
+    background: #000000;
+    border: none;
+    width: 500px;
+    height: 35px;
+    margin-top: -20px;
+    margin-left: -4px;
+    border-radius: 4px;
+    border-bottom: 4px solid rgb(34, 34, 34);
+    transition: all .2s ease;
+    outline: none;
+  }
+  #uploadform button:hover{
+    background: #333333;
+    color: rgb(255, 255, 255);
+  }
+  #uploadform button:active{
+    border:0;
+  }
+
+  /* .textcard
+  { background-color: rgb(87, 87, 87);
+    color: rgb(97, 16, 16);
+    padding-left: 20px;
+    padding-right: 24px;
+    padding-bottom: 18px;
+    padding-top: 32px;
+    margin-bottom: 20px;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border-radius: 10px;
+    width: 70%;
+  } */
+
+  .textcardtext
+  {
+    padding-bottom: 14px;
+    margin-bottom: 22px;
+    margin-top: 5px;
+    line-height: 1.9;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 2px 3px #d3d3d3; */
+    color: rgb(15, 15, 15);
+    border-radius: 3px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .booktitle
+  {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 45px;
+    color: black;
+    line-height: 0.7;
+  }
+  
+  /* #overflowTest {
+    background-color: rgb(110, 110, 110);
+    color: black;
+    padding-left: 20px;
+    padding-right: 24px;
+    padding-bottom: 18px;
+    padding-top: 32px;
+    margin-bottom: 20px;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border-radius: 10px;
+    width: 70%;
+    height: 750px;
+    /* overflow: scroll;   */
+  /* } */
+
+  .bookpageimage
+  {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    margin-top: 16px;
+    
+  }
+
+  
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* .topnav a:hover {
+  color: black;
+} */
+
+.topnav a.active {
+  color: rgb(0, 0, 0);
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+  width: 250px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: ;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(194, 194, 194);
+  color: black;
+  
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: rgb(0, 0, 0);
+}
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+.topnavcontainer
+{
+  padding-top: 28px;
+  padding-bottom: 38px;
+}
+
+.bookgrid
+{
+  width: 80%;
+  padding-left: 20px;
+}
+
+ul > li {
+  display: inline-block;
+  /* You can also add some margins here to make it look prettier */
+  zoom:1;
+  *display:inline;
+  /* this fix is needed for IE7- */
+}
+
+/* .grid-container {
+  display: grid;
+  grid-column-gap: -50px;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  padding: 0px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+} */
+
+#bookpageform
+{}
+
+a.effect-shine:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(168, 14, 189, 0.6) 30%, rgb(153, 40, 163) 50%, rgba(83, 26, 109, 0.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+.sub-main{
+  width: 100%;
+  justify-content: center;
+  margin-left: auto;
+    margin-right: auto;
+}
+
+.button-three {
+  margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  background-color: #8ee6fc;
+  border-radius: 10px;
+  padding: 16px;
+  border: none;
+  width: 150px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.button-three:hover{
+ background:#fff;
+ box-shadow:0px 2px 10px 5px #97B1BF;
+ color:#000;
+}
+
+/* .button-three:after {
+  content: "";
+  background: #f1c40f;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+} */
+
+.button-three:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 24px;
+  margin-top: 20px;
+}
+
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.bookpagebuttons
+{
+  float: right;
+  right: 30px;
+}
+
+.btn {
+  /* background-color: rgb(139, 238, 255); */
+  /* border: none; */
+  color: rgb(0, 0, 0);
+  padding: 4px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-width: 2px;
+  border-color: rgb(76, 14, 128);
+  margin-right: 3px;
+display: inline-block;
+transition: all 0.4s ease 0s
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  color: #000000 !important;
+  background: #c281ff;
+  border-color: #c281ff;
+  border-width: 2px;
+  transition: all 0.4s ease 0s;
+}
+
+
+

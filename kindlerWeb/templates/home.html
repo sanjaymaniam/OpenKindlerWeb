@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="containerhome">
+    {% if user.is_authenticated %}
+        <div class="maintext">Welcome, {{user.username}}.</div>
+    {% else %}
+        <div class="maintext">Welcome</div>
+        <p>Click <a href="/">here</a> to use Kindler as a guest. Or login with your credentials.</p>
+    {% endif %}
+</div>
+
+{% endblock %}

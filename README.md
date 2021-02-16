@@ -4,6 +4,11 @@ Curate your highlights for others. Inspired by Sawyer H's [Reading Highlights](h
 
 I host a demo at https://kindlerweb.herokuapp.com/. You can easlily set up your instance by pasting a secret key in `settings.py`.
 
-Note that this project is nowhere near complete. Contributions and suggestions are always welcome!
+Note that this project is nowhere near complete. Contributions and suggestions are always welcome.
 
-Thanks to [TheInkEdge](https://www.instagram.com/theinkedge/?hl=en) for help with the front-end :)
+Thanks to [TheInkEdge](https://www.instagram.com/theinkedge/?hl=en) for help with the front-end!
+
+- To Do:
+  - [ ] Write a "How To Set Your KindlerWeb Up" section
+  - [ ] Brainstorm: How do you let people join in and ruminate on ideas they find interesting?
+ 
